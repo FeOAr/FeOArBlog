@@ -23,7 +23,7 @@
     <meta name="description" content="personal blog of learning">
 <meta property="og:type" content="website">
 <meta property="og:title" content="EsNaSc">
-<meta property="og:url" content="https://github.com/FeOAr/FeOAr.github.io.git/index.html">
+<meta property="og:url" content="https://github.com/FeOAr/FeOAr.github.io.git/page/2/index.html">
 <meta property="og:site_name" content="EsNaSc">
 <meta property="og:description" content="personal blog of learning">
 <meta property="og:locale">
@@ -370,445 +370,30 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2021/04/20/STM32%E5%B7%A5%E7%A8%8B%E5%BB%BA%E7%AB%8B%E5%8F%8A%E6%B5%81%E6%B0%B4%E7%81%AF%E8%BD%AF%E4%BB%B6%E9%83%A8%E5%88%86%E5%AE%9E%E7%8E%B0/" >
+        <a class="abstract-title" href = "/2020/10/07/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" >
             
-                <span>STM32工程建立</span>
+                <span>汇编语言</span>
         </a>
         <div class="abstract-content">
-            STM32工程建立
-本工程建立在已有工程基础上
+            汇编语言1. CPU,寄存器，内存
+CPU由运算器，控制器，寄存器构成
+CPU引出了三种总线：地址总线，控制总线，数据总线
+地址总线的宽度决定了CPU的寻址能力
+数据总线的宽度决定了CPU与其他旗舰进行数据传送时一次传输的数据量
+控制总线的宽度决定了CPU对系统中其他器件的控制能力
 
 
-新建新工程文件夹
 
+8086寄存器
+8086寄存器为16位
+运算器一次运算16位数据
+寄存器最大宽度16位
+寄存器与运算器之间的通路16位
 
-复制基础例程
 
-
-
-
-添加驱动文件进工程库
-
-4. 导入外设和内核支撑
-5. 在kile中新建项目并创建工程文件
-6. 选择芯片型号
-7. 配置文件环境
-8. 配置库路径
-9. 宏定义设置
-10. 屏蔽项目用不到的头文件调用
-
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/04/20</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "课后作业">课后作业</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2021/04/20/%E6%B5%81%E6%B0%B4%E7%81%AF%E5%AE%9E%E7%8E%B0/" >
-            
-                <span>流水灯实现</span>
-        </a>
-        <div class="abstract-content">
-            流水灯实现
-
-查看原理图选择需要的LED和按键
-
-
-
-在程序中初始化以及定义引脚功能
-1234567891011121314151617void init()&#123;    GPIO_InitTypeDef zhr_18060103118;		//1.GPIO结构体定义    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOF|RCC_APB2Periph_GPIOA, ENABLE);		//时钟,GPIO的F口使能        zhr_18060103118.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7 | GPIO_...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/04/20</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "课后作业">课后作业</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/12/30/%E7%A4%BE%E5%8C%BA%E6%B0%B4%E7%94%B5%E6%B0%94%E7%AE%A1%E7%90%86/" >
-            
-                <span>社区水电气管理系统</span>
-        </a>
-        <div class="abstract-content">
-            社区水电气管理系统
-
-摘要 
-本来是打算工作的，虽然对嵌入式行业充满兴趣但是还是准备学个Java去早早当码农。于是匆匆学了两周Java，看的网课是阿b上的狂神说Java。学了个SE又打算考研了，，，，但是两周的努力不能付诸东流啊，于是才有了这个微型项目。题目我C++课设时选择的，于是顺便拿来再写一个Java版本。
-代码与思路比较简单，算是两周学习的一个小成果吧~
-
-项目github链接
-
-
-源代码Main.java1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/12/30</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "基础学习">基础学习</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/12/27/BankerAlgorithm/" >
-            
-                <span>BankerAlgorithm</span>
-        </a>
-        <div class="abstract-content">
-            BankerAlgorithm
-我的操作系统课设，写的比较简单。。。
-
-
-银行家算法  ， 安全检查
-
-算法简介在多道程序系统中，虽可以借助多个进程的并发执行来改善系统的资源利用率，提高系统吞吐量，但可能发生一种危险——死锁，即多个进程在运行过程中因争夺资源而造成的一种僵局，若无外力作用，将无法再向前推进。如此，寻求一种避免死锁的方法便显得有为重要。死锁的产生一般的原因有两点:竞争资源和进程间推进顺序非法。因此，我们只需在当前的有限资源下，找到一组合法的执行顺序，便能很好的避免死锁，我们称它为安全序列。而银行家算法起源于银行系统的发放贷款，和计算机操作系统的资源分配完全符合，因此可以借鉴...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/12/27</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "基础学习">基础学习</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/10/26/MySql%E7%AE%80%E7%95%A5%E7%AC%94%E8%AE%B0/" >
-            
-                <span>MySQL简略笔记</span>
-        </a>
-        <div class="abstract-content">
-            MySQL简略笔记基本
-启动
-  1net start mysql
-
-登录
-  1mysql -u root -p --连接数据库
-
-退出
-  1exit;	--推出连接
-
-
-
-
-
-
-其他
-  12345678-- 所有语句使用&#x27; ; &#x27;结尾show databases;	--查看所有数据库show tables;	--查看所有表describe student;	--查看数据库中所有表的信息creat database teacher;	--船舰一个teacher数据库use school --切换数据库
-
-数据库语言
-
-
-
-DDL    定义
-
-DML   操作
-...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/10/26</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "基础学习">基础学习</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/10/13/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/" >
-            
-                <span>常用命令</span>
-        </a>
-        <div class="abstract-content">
-            常用命令
-盘符切换
-
-E:
-
-
-查看当前目录下所有文件
-
-dir
-
-
-切换目录
-
-cd (change directory)
-
-cd /d E:\file    (其中 /d 为跨盘符指令)
-cd ..（返回上级）
-
-
-
-清理屏幕
-
-cls（clean screen）
-
-
-退出
-
-exit
-
-
-查看IP
-
-ipconfig
-
-
-打开计算器
-
-calc
-
-
-记事本
-
-notepad
-
-
-ping
-
-ping www.bilibili.com
-
-
-创建文件夹
-
-md test
-
-
-新建文件
-
-cd&gt;a.txt
-
-
-删除
-
-del a.txt
-
-
-删除目录
-
-rd test
-
-
-
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/10/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "基础学习">基础学习</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/10/10/%E7%A8%80%E7%96%8F%E6%95%B0%E7%BB%84/" >
-            
-                <span>稀疏数组</span>
-        </a>
-        <div class="abstract-content">
-            稀疏数组
-
-当一个数组中大部分元素为0，或者为同一值的数组时，可以使用吸收叔叔组来保存该数组。
-稀疏数组的处理方式时：
-记录数组一共有几行几列，有多少个不同的值
-八级有不同值的元素和行列及值记录在一个小规模数组中，从而缩小程序规模
-
-
-如图，左边为原始数组，右边为稀疏数组
-
-
-
-
-
-
-123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778package...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/10/10</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "基础学习">基础学习</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/" >
-            
-                <span>Java学习</span>
-        </a>
-        <div class="abstract-content">
-            Java基础语法注释，标识符，关键字Java注释
-单行注释
-
-多行注释
-
-文档注释
-
-
-
-Java标识符关键字
-
-标识符
-类名，变量名，方法名都称为标识符。
-
-数据类型
-强类型语言
-
-
-Java数据类型有两类
-基本类型（primitive type）
-引用类型（reference type）
-
-
-
-
-
-
-boolean    (true/false&lt;—defaule)
-1boolean flag = true;
-
-byte          (节约空间)
-
-short / int / long       
-
-
-123456789101112131415161718//eg.lon...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/10/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "基础学习">基础学习</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/10/07/MD%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" >
-            
-                <span>Markdown语法</span>
-        </a>
-        <div class="abstract-content">
-            Markdown语法1.代码块
-“ ```语言 “
-
-12345678//cpp with hello worldinclude&lt;iostream.h&gt;using namespace std;void main()&#123;    cout&lt;&lt;&quot;hello wordl&quot;&lt;&lt;endl;&#125;
-
-
-
-12import turtleprint(&quot;hello world&quot;)
-
-2.标题123#[空格] 一级##[空格] 二级###[空格] 三级    
-
-3.字体12345678//加粗**无产阶级**//代码高...
+8086有14个寄存器：AX, BX, CX, DX, SI, DI, SP, BP, IP, CS, SS, DS, ES, PSW
+段寄存器：CS, SS, DS, ES
+偏移...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -832,19 +417,14 @@ short / int / long
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/10/07/CSDN_MD_GRAMMAR/" >
+        <a class="abstract-title" href = "/2020/10/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" >
             
-                <span>Markdown form CSDN</span>
+                <span>读书笔记</span>
         </a>
         <div class="abstract-content">
-            @TOC
-欢迎使用Markdown编辑器你好！ 这是你第一次使用 Markdown编辑器 所展示的欢迎页。如果你想学习如何使用Markdown编辑器, 可以仔细阅读这篇文章，了解一下Markdown的基本语法知识。
-新的改变我们对Markdown编辑器进行了一些功能拓展与语法支持，除了标准的Markdown编辑器功能，我们增加了如下几点新功能，帮助你用它写博客：
+            读书笔记《毛泽东文选》谁是我们的敌人?谁是我们的朋友?这个问题是革命的首要问题。中国过去一切革命斗争成效甚少，其基本原因就是因为不能团结真正的朋友，以攻击真正的敌人。革命党是群众的向导，在革命中未有革命党领错了路而革命不失败的。我们的革命要有不领错路和一定成功的把握，不可不注意团结我们的真正的朋友，以攻击我们的真正的敌人。我们要分辨真正的敌友，不可不将中国社会各阶级的经济地位及其对于革命的态度，作一个大概的分析。
 
-全新的界面设计 ，将会带来全新的写作体验；
-在创作中心设置你喜爱的代码高亮样式，Markdown 将代码片显示选择的高亮样式 进行展示；
-增加了 图片拖拽 功能，你可以将本地的图片直接拖拽到编辑区域直接展示；
-全新的 KaTe...
+开篇点明了革命的关键问题，我们的敌人是谁，要革谁的命，谁将是我们的同志，谁又是潜在的敌人，谁又是潜在的队友；都需要搞明白弄清楚才能有以此为基础之一的战略制定。我想起了孟子的一...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -855,7 +435,7 @@ short / int / long
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "引用备忘">引用备忘</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "课后作业">课后作业</a>
     
 </div>
             
@@ -865,7 +445,7 @@ short / int / long
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">NEXT &gt;</a>
+        <a class="extend prev" rel="prev" href="/">&lt; PREV</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
     </nav>
     
 </main>

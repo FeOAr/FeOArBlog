@@ -6,7 +6,7 @@
   <link href="https://github.com/FeOAr/FeOAr.github.io.git/atom.xml" rel="self"/>
   
   <link href="https://github.com/FeOAr/FeOAr.github.io.git/"/>
-  <updated>2020-12-30T15:39:24.101Z</updated>
+  <updated>2021-04-20T08:02:54.225Z</updated>
   <id>https://github.com/FeOAr/FeOAr.github.io.git/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>STM32工程建立</title>
+    <link href="https://github.com/FeOAr/FeOAr.github.io.git/2021/04/20/STM32%E5%B7%A5%E7%A8%8B%E5%BB%BA%E7%AB%8B%E5%8F%8A%E6%B5%81%E6%B0%B4%E7%81%AF%E8%BD%AF%E4%BB%B6%E9%83%A8%E5%88%86%E5%AE%9E%E7%8E%B0/"/>
+    <id>https://github.com/FeOAr/FeOAr.github.io.git/2021/04/20/STM32%E5%B7%A5%E7%A8%8B%E5%BB%BA%E7%AB%8B%E5%8F%8A%E6%B5%81%E6%B0%B4%E7%81%AF%E8%BD%AF%E4%BB%B6%E9%83%A8%E5%88%86%E5%AE%9E%E7%8E%B0/</id>
+    <published>2021-04-19T16:00:00.000Z</published>
+    <updated>2021-04-20T08:02:54.225Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="STM32工程建立"><a href="#STM32工程建立" class="headerlink" title="STM32工程建立"></a>STM32工程建立</h1><blockquote><p>本工程建立在已有工程基础上</p></blockquote><ol><li><p>新建新工程文件夹</p><p><img src="https://z3.ax1x.com/2021/04/05/cQLyCT.png"></p></li><li><p>复制基础例程</p></li></ol><p><img src="https://z3.ax1x.com/2021/04/05/cQLRKJ.png"></p><ol start="3"><li>添加驱动文件进工程库</li></ol><p><img src="https://z3.ax1x.com/2021/04/05/cQLfbR.png"><br>4. 导入外设和内核支撑</p><p><img src="https://z3.ax1x.com/2021/04/05/cQLWr9.png"><br>5. 在kile中新建项目并创建工程文件</p><p><img src="https://z3.ax1x.com/2021/04/05/cQLI56.png"><br>6. 选择芯片型号</p><p><img src="https://z3.ax1x.com/2021/04/05/cQL5Ux.png"><br>7. 配置文件环境</p><p><img src="https://z3.ax1x.com/2021/04/05/cQL78O.png"><br>8. 配置库路径</p><p><img src="https://z3.ax1x.com/2021/04/05/cQLgv4.png"><br>9. 宏定义设置</p><p><img src="https://z3.ax1x.com/2021/04/05/cQLr5V.png"><br>10. 屏蔽项目用不到的头文件调用</p><p><img src="https://z3.ax1x.com/2021/04/05/cQL68U.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;STM32工程建立&quot;&gt;&lt;a href=&quot;#STM32工程建立&quot; class=&quot;headerlink&quot; title=&quot;STM32工程建立&quot;&gt;&lt;/a&gt;STM32工程建立&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;本工程建立在已有工程基础上&lt;/p&gt;
+&lt;/blockquot</summary>
+      
+    
+    
+    
+    
+    <category term="课后作业" scheme="https://github.com/FeOAr/FeOAr.github.io.git/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>流水灯实现</title>
+    <link href="https://github.com/FeOAr/FeOAr.github.io.git/2021/04/20/%E6%B5%81%E6%B0%B4%E7%81%AF%E5%AE%9E%E7%8E%B0/"/>
+    <id>https://github.com/FeOAr/FeOAr.github.io.git/2021/04/20/%E6%B5%81%E6%B0%B4%E7%81%AF%E5%AE%9E%E7%8E%B0/</id>
+    <published>2021-04-19T16:00:00.000Z</published>
+    <updated>2021-04-20T08:02:57.651Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="流水灯实现"><a href="#流水灯实现" class="headerlink" title="流水灯实现"></a>流水灯实现</h1><hr><ol><li><p>查看原理图选择需要的LED和按键</p><p><img src="https://z3.ax1x.com/2021/04/20/c7lrjI.png" alt="led原理图"></p><p><img src="https://z3.ax1x.com/2021/04/20/c7lyut.png" alt="按键原理图"></p></li><li><p>在程序中初始化以及定义引脚功能</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    GPIO_InitTypeDef zhr_18060103118;<span class="comment">//1.GPIO结构体定义</span></span><br><span class="line"></span><br><span class="line">    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOF|RCC_APB2Periph_GPIOA, ENABLE);<span class="comment">//时钟,GPIO的F口使能</span></span><br><span class="line">    </span><br><span class="line">    zhr_18060103118.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_8 | GPIO_Pin_9;</span><br><span class="line">    zhr_18060103118.GPIO_Speed = GPIO_Speed_50MHz;</span><br><span class="line">    zhr_18060103118.GPIO_Mode = GPIO_Mode_Out_PP; <span class="comment">//推挽输出</span></span><br><span class="line">    GPIO_Init(GPIOF, &amp;zhr_18060103118);</span><br><span class="line"></span><br><span class="line">zhr_18060103118.GPIO_Pin = GPIO_Pin_0;</span><br><span class="line">    zhr_18060103118.GPIO_Speed = GPIO_Speed_50MHz;</span><br><span class="line">    zhr_18060103118.GPIO_Mode = GPIO_Mode_IPD; <span class="comment">//下拉输入</span></span><br><span class="line">    GPIO_Init(GPIOA, &amp;zhr_18060103118);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>移位实现流水灯，引入按键添加效果</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    init();</span><br><span class="line">    <span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">6</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="number">0x00000000</span>==(GPIOA-&gt;IDR&amp;<span class="number">0x00000001</span>))</span><br><span class="line">            &#123;</span><br><span class="line">                GPIOF-&gt;ODR &amp;= <span class="number">0</span>;</span><br><span class="line">                delay(<span class="number">10000</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            GPIOF-&gt;ODR |= <span class="number">0x00000001</span> &lt;&lt; i; <span class="comment">//Fi置1</span></span><br><span class="line">            delay(<span class="number">10000</span>);  <span class="comment">//延时函数较简单，此处没有展现</span></span><br><span class="line">            GPIOF-&gt;ODR &amp;= ~~<span class="number">0x00000001</span> &lt;&lt; i; <span class="comment">//Fi清0</span></span><br><span class="line">            delay(<span class="number">10000</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;流水灯实现&quot;&gt;&lt;a href=&quot;#流水灯实现&quot; class=&quot;headerlink&quot; title=&quot;流水灯实现&quot;&gt;&lt;/a&gt;流水灯实现&lt;/h1&gt;&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;查看原理图选择需要的LED和按键&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://z3</summary>
+      
+    
+    
+    
+    
+    <category term="课后作业" scheme="https://github.com/FeOAr/FeOAr.github.io.git/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>社区水电气管理系统</title>
